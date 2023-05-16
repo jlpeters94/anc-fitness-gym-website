@@ -1,0 +1,226 @@
+<html>
+<head>
+<title>Training Logs | ANC Fitness Gym</title>
+<style>
+
+/* BODY */
+body {
+	background: #FFFFFF;
+	margin:0;
+}
+* {margin:0; padding:0;}
+
+/* NAVIGATION BAR */
+#navdiv{
+	opacity:100;
+	filter: (opacity=100);
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:1000;
+	width:100%;
+}
+#navdiv ul{
+	width:100%;
+	height:55px;
+	background:white;
+	line-height:54px;
+	color:red;
+	margin-right:45px;
+}
+#navdiv ul a{
+	text-decoration:none;
+	font-family:Calibri;
+	font-size:13px;
+	color:black;
+	padding:20px;
+}
+#navdiv ul a:hover{
+	text-decoration:none;
+	color:white;
+	padding:20px;
+}
+#navdiv ul li{
+	list-style-type:none;
+	display:inline-block;
+	margin-left:0px;
+	float:left;
+}
+#navdiv ul li:hover{
+	background:red;
+	transition:all 0.40s;
+}
+#navdiv h1{
+	float: left;
+	font-family:Century Gothic;
+	margin-left: 100px;
+}
+#navdiv h3{
+	float: left;
+	font-size:10px;
+	font-family:Century Gothic;
+	margin-left:-9px;
+	margin-right: 50px;
+}
+hr {
+	border-style: solid;
+	color: #DDDDDD;
+}
+.title {
+	font-family: Century Gothic;
+	font-size: 26px;
+	font-weight: ;
+	letter-spacing: 5px;
+	color: black;
+	text-align: center;
+}
+.desc {
+	margin-top: 10px;
+	font-family: Calibri;
+	font-size: 14px;
+	font-weight: ;
+	text-align: center;
+}
+
+/* ATHLETES */
+.athcontainer {
+	text-align: center;
+}
+.athbox {
+	display: inline-block;
+	width: 300px;
+	height: 400px;
+	background: white;
+	margin: 14px; 
+	color: black;
+	font-family: Century Gothic;
+}
+.athboximg1{
+	background: url(amaga.jpg);
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+.athboximg2{
+	background: url(icon1.jpg);
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+.athboximg3{
+	background: url(2.png);
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+.athboximg4{
+	background: url(aaronlogpic.jpg);
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+.athboximg5{
+	background: url(alexlogpic.jpg);
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+.athboximg6{
+	background: url(jesspiclog.jpg);
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+.thumbtext {
+	height:300px;
+	opacity:0;
+	background-color: rgba(0,0,0,0.5);
+	transition: 0.5s;
+}
+.thumbtext:hover{
+	opacity:1;
+}
+.athtextcontainer {
+	text-align: left;
+}
+.athcatp {
+	margin-top: 0px;
+	font-size: 12px;
+	font-weight: ;
+	letter-spacing: 3px;
+	color: #999999;
+}
+.athcatp2 {
+	margin-top: 15px;
+	font-size: 26px;
+	font-weight: ;
+	letter-spacing: 5px;
+	color: black;
+}
+.athcatp2:hover {
+	color: red;
+	transition: 0.5s;
+}
+.athcatp3 {
+	line-height: 20px;
+	color: #999999;
+	letter-spacing: 2px;
+	font-family: Calibri;
+	font-size: 11px;
+	font-weight: ;
+}
+</style>
+</head>
+
+<body>
+
+<!- NAVIGATION ->
+<div id="navdiv">
+<ul>
+<h1>ANC</h1><h3>Fitness Gym</h3>
+<li> <a href="index.html">HOME</a></li>
+<li> <a href="videospage.html">VIDEOS</a></li>
+<li> <a href="blogs.html">BLOGS</a></li>
+<li> <a href="about.html">ABOUT</a></li>
+<li> <a href="loginmenu2.html">LOGIN</a></li>
+</ul>
+</div><br><br><br>
+
+<hr><br>
+<p class="title">TRAINING LOGS</p>
+<p class="desc">Read atheletes' logs about their training routines! Get motivated!</p><br>
+<hr><br>
+
+<!- ATHLETES ->
+<div class="athcontainer">
+	<div class="athbox">
+		<div class="athboximg6">
+			<a href="jesslogs.html"><div class="thumbtext"></div></a>
+		</div>
+		<div class="athtextcontainer">
+			<a href="jesslogs.html" style="text-decoration: none;"><p class="athcatp2">JESS PETERS</p></a>
+			<p class="athcatp">POWERLIFTING LOGS</p>
+		</div>
+	</div>
+	<div class="athbox">
+		<div class="athboximg4">
+			<a href="aaronlogs.html"><div class="thumbtext"></div></a>
+		</div>
+		<div class="athtextcontainer">
+			<a href="aaronlogs.html" style="text-decoration: none;"><p class="athcatp2">AARON MENDOZA</p></a>
+			<p class="athcatp">POWERBUILDING LOGS</p>
+		</div>
+	</div>
+	<div class="athbox">
+		<div class="athboximg5">
+			<a href="alexlogs.html"><div class="thumbtext"></div></a>
+		</div>
+		<div class="athtextcontainer">
+			<a href="alexlogs.html" style="text-decoration: none;"><p class="athcatp2">ALEX LAZARO</p></a>
+			<p class="athcatp">VOLLEYBALL LOGS</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

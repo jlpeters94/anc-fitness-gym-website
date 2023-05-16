@@ -1,0 +1,522 @@
+<html>
+<head>
+<link rel="icon" href="aboutlogo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>ANC Fitness Gym | Lift like there is no tomorrow.</title>
+<style>
+body{
+font-family: Georgia;
+text-decoration: none;
+margin:0;
+background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(frontpic3.jpg);
+background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
+}
+* {margin:0; padding:0;}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.sampleheader {
+
+	width:100%;
+	font-family:Century Gothic;
+	color:white;
+	font-size: 80px;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+.descheader {
+	font-family:Century Gothic;
+	
+}
+
+.desctext {
+	font-family: Calibri;
+	
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color:#FFFFFF;
+  color: red;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #cc0000;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#navdiv{
+	opacity:100;
+	filter: (opacity=100);
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:1000;
+	width:100%;
+}
+#navdiv ul{
+	width:100%;
+	height:55px;
+	background:white;
+	line-height:54px;
+	color:red;
+	margin-right:45px;
+}
+#navdiv ul a{
+	text-decoration:none;
+	font-family:Calibri;
+	font-size:13px;
+	color:black;
+	padding:20px;
+}
+#navdiv ul a:hover{
+	text-decoration:none;
+	color:white;
+	padding:20px;
+}
+#navdiv ul li{
+	list-style-type:none;
+	display:inline-block;
+	margin-left:0px;
+	float:left;
+}
+#navdiv ul li:hover{
+	background:red;
+	transition:all 0.40s;
+}
+#navdiv h1{
+	float: left;
+	font-family:Century Gothic;
+	margin-left: 100px;
+}
+#navdiv h3{
+	float: left;
+	font-size:10px;
+	font-family:Century Gothic;
+	margin-left:-9px;
+	margin-right: 50px;
+}
+.whitebox {
+	background-color:white;
+	width:100%;
+}
+#fat-menu {
+    /* Set position so that offsets in children are based on parent */
+    position: relative;
+	font-family:Calibri;
+  }
+#fat-menu h1{
+	font-family:Century Gothic;
+	font-size:36px;
+}
+
+  .first-column,
+  .column {
+    float:left;
+    width:500px;
+	margin-right:0px;
+	margin-left:20px;
+  }
+
+  .column {
+    margin-left:275px;
+	width:400px;
+  }
+
+  .column:before {
+    content:" ";
+    margin:0 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    
+  }
+.button1{
+	background-color: #FF0000;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+.button1:hover{
+	background-color: black;
+	transition: 0.5s;
+}
+.button2{
+	background-color: White;
+    border: none;
+    color: black;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+.button2:hover{
+	background-color: #FF0000;
+	color: white;
+	transition: 0.5s;
+}
+#yvesbox{
+	width:100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(samplelanggago.jpg);
+	background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
+	color:white;
+	font-family: Calibri;
+}
+#yvesbox h1{
+	font-family:Century Gothic;
+	font-size:36px;
+}
+#thirdbox{
+	width:100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(2.jpg);
+	background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
+	color:white;
+	font-family: Calibri;
+}
+#thirdbox h1{
+	font-family:Century Gothic;
+	font-size:36px;
+}
+.triboxtext {
+	height:300px;
+	opacity:0;
+	background-color: rgba(0,0,0,0.75);
+	transition: 0.5s;
+	font-family: Calibri;
+	color:white;
+}
+.triboxtext:hover{
+	opacity:1;
+}
+.tribox1 {
+	width: 33.3%;
+	height: 300px;
+	float: left;
+	background-image:url(carla.jpg);
+	background-size: cover;
+}
+.tribox2 {
+	width: 33.3%;
+	height: 300px;
+	float: left;
+	background-image:url(asgaa.jpg);
+	background-size: cover;
+	background-position: 100% 22%;
+}
+.tribox3 {
+	width: 33.3%;
+	height: 300px;
+	float: left;
+	background-image:url(TB3.jpg);
+	background-position: 100% 10%;
+	background-size: cover;
+}
+#footerbox {
+	float:left;
+	width:33.3%;
+	background: white;
+}
+#footerbox h3{
+	margin-left:30;
+	font-family: Century Gothic;
+	color: red;
+	letter-spacing: 3px;
+}
+.footerline{
+	margin-top: -10px;
+	margin-left: 30px;
+	margin-bottom: 5px;
+	color: #CCCCCC;
+}
+.footerlink {
+	margin-left:30;
+	color: #000000;
+	text-decoration: none;
+	font-family: Calibri;
+}
+.footerlink:hover {
+	color: #999999;
+	transition: 0.5s;
+	
+}
+.copyright {
+	width:100%;
+	color: #000000;
+	background: #EEEEEE;
+	font-family: Calibri;
+}
+.footertextcon1 {
+	float:left;
+}
+.footertextcon2 {
+	float:right;
+	margin-right: 100px;
+}
+.footertext1 {
+	font-family: Century Gothic;
+	margin-left: 30px;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+.footertext2 {
+	font-family: Calibri;
+	font-size: px;
+	margin-left: 30px;
+}
+.fa {
+  padding-top: 5px;
+  padding-right: 0px;
+  padding-left: 30px;
+  font-size: 20px;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.fa:hover {
+    color: red;
+    transition: 0.5s;
+}
+</style>
+<script>
+
+function login(){
+
+if(document.getElementById("opi").value == "admin" && document.getElementById("omsim").value == "admin"){
+alert("Welcome, Admin!");
+location.href = "admin_menu.html";
+}
+
+else if(document.getElementById("opi").value == "user" && document.getElementById("omsim").value == "user"){
+alert("Welcome, User!");
+location.href = "user_menu.html";
+}
+
+else{
+alert("Incorrect Username or Password!");
+}
+
+}
+
+var vids = document.getElementsByClassName('_autoplay_vid'); 
+
+for (var i = vids.length - 1; i >= 0; i--) {
+	//pause all the videos by default
+	vids[i].pause();
+}
+
+window.onscroll = autoplay;
+
+function autoplay(){
+    for (var i = vids.length - 1; i >= 0; i--) {
+        var currentYpos = window.pageYOffset || document.documentElement.scrollTop;
+		if ( currentYpos >= vids[i].offsetTop && currentYpos <= vids[i].offsetTop + vids[i].offsetHeight ) {
+			vids[i].pause();
+		}else{
+			vids[i].play();
+		}
+	}
+}
+</script>
+</head>
+<body>
+<br><br><br>
+<div id="navdiv">
+<ul>
+<h1>ANC</h1><h3>Fitness Gym</h3>
+<li> <a href="index.html">HOME</a></li>
+<li> <a href="videospage.html">VIDEOS</a></li>
+<li> <a href="blogs.html">BLOGS</a></li>
+<li> <a href="about.html">ABOUT</a></li>
+<li> <a href="loginmenu2.html">LOGIN</a></li>
+</ul>
+</div><br>
+<h1 class="sampleheader">&nbsp&nbsp&nbsp"<font color="#DD0000">Train hard</font> to<br>&nbsp&nbsp&nbsp look good<br>&nbsp&nbsp&nbsp <font color="#DD0000">naked</font>."<br>&nbsp&nbsp&nbsp&nbsp<i><font size="6">- Agassi Ching, Fitness Model</font></i></h1>
+<br><br><br><br><br><br><br><br><br>
+
+<div class="whitebox">
+<br>
+<div id="fat-menu">
+  <div class="first-column">
+    <video class="_autoplay_vid" width="640" height="360" controls autoplay>
+		<source src="frontvideo.mp4">
+		</video>
+  </div>
+  <div class="column">
+	<br><br><br><br><br><center>
+	<h1><font color="#FF0000">FEEL THE PRESSURE</font></h1><br>
+    What is ANC?<br><br>
+	<a href="" class="button1">READ MORE</a></center>
+  </div>
+  <div style="clear:both;"></div>
+</div>
+<br>
+</div>
+
+<div id="yvesbox">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<center>
+	<h1>KILL YOUR MUSCLES</h1><br>
+    <h3>"Banat Ni Coach."</h3><br><br>
+	<a href="" class="button2">View more Banats</a></center>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<div class="tribox1">
+	<a href="" style="text-decoration:none;"><div class="triboxtext">
+	<br><br><br><br><br><br>
+	<center>>>&nbsp&nbspBROWSE THE ARSENAL</center>
+	</div></a>
+</div>
+<div class="tribox2">
+	<a href="" style="text-decoration:none;"><div class="triboxtext">
+	<br><br><br><br><br><br>
+	<center>>>&nbsp&nbspBROWSE THE ARSENAL</center>
+	</div></a>
+</div>
+<div class="tribox3">
+	<a href="" style="text-decoration:none;"><div class="triboxtext">
+	<br><br><br><br><br><br>
+	<center>>>&nbsp&nbspBROWSE THE ARSENAL</center>
+	</div></a>
+</div>
+
+<div id="thirdbox">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<center>
+	<h1>LET YOUR BODY CRAVE FOR IT</h1><br>
+    BE A MEMBER AND JOIN THE ANC FAMILY<br><br>
+	<a href="" class="button2">Inquire</a></center>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<div class="whitebox">
+<br>
+	<div id="footerbox">
+		<h3>CONTACT US</h3>
+		<p class="footerline">
+		______________________________________
+		</p>
+		<div class="footertextcon1">
+		<p class="footertext1">PHONE NUMBER</b></p>
+		<p class="footertext2">0917 708 9988</p><br>
+		<p class="footertext1">SOCIAL CONNECT</b></p>
+		<span class="fa fa-facebook"></span><br>
+		</div>
+		<div class="footertextcon2">
+		<p class="footertext1">MESSENGER</b></p>
+		<p class="footertext2">@ancfitnessgym</p>
+		</div>
+	</div>
+	<div id="footerbox">
+		<h3>MY ACCOUNT</h3>
+		<p class="footerline">
+		______________________________________
+		</p>
+		<a href="" class="footerlink">Login</a><br>
+		<a href="" class="footerlink">Register</a><br>
+	</div>
+	<div id="footerbox">
+		<h3>HELP</h3>
+		<p class="footerline">
+		______________________________________
+		</p>
+		<a href="" class="footerlink">FAQ'S</a><br>
+		<a href="" class="footerlink">Schedules</a><br>
+		<a href="" class="footerlink">Membership</a><br>
+		<a href="" class="footerlink">Offers</a><br>
+	</div><br>
+<br><br><br><br><br><br><br><br><br><br>
+</div>
+<div class="copyright">
+	<br><center>
+	© Copyright 2018 ANC Fitness Gym. All Rights Reserved.
+	</center><br>
+</div>
+
+</body>
+</html>
